@@ -5,49 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fyle Assignment</title>
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-    <div class="flex justify-center items-center gap-3 mt-4 border-b">
-        <p class=" md:text-2xl">Enter User Name: </p>
+    <div id="userNameWrapper" class="flex-center gap-3">
+        <p class=" ">Enter User Name: </p>
         <input type="text" name="username" id="username" placeholder="jollybolt"
-            class="border-b-2 md:text-2xl focus:outline-none">
-        <button id="getUser" class="border rounded-md p-2">Submit</button>
+            class="userNameInput ">
+        <button id="getUser" class="submitBtn">Submit</button>
     </div>
-    <div class="p-2">
-        <div class="border-2 py-8 " id="content">
-            <div id="contentLoader" class='relative w-[100vw] h-[70vh] hidden justify-center items-center'>
-                <div class="absolute h-[250px] w-[250px] bg-white rounded-lg border-4 flex justify-center items-center">
+
+        <div class="" id="content">
+            <div id="contentLoader" class=' hidden '>
+                <div class="loader flex-center">
                     Loading...
                 </div>
             </div>
 
-            <div class="px-5 md:px-20 lg:px-20" >
-                <div class="flex  " id="about"></div>
+            <div id="aboutWrapper" class="" >
+                <div class="flex flex-col sm:flex-row" id="about"></div>
                 <div>
-                    <p class="mt-5" id="githubUrl"></p>
+                    <p class="" id="githubUrl"></p>
                 </div>
             </div>
             <div>
-                <div id="repoLoader" class='relative w-[100vw] h-[50vh] hidden justify-center items-center'>
-                    <div class="absolute h-[250px] w-[250px] bg-white rounded-lg border-4 flex justify-center items-center">
+                <div id="repoLoader" class='hidden '>
+                    <div class="loader flex-center">
                         Loading...
                     </div>
                 </div>
-            <div id="repositories" class="p-4 md:px-10 flex flex-wrap justify-around ">
+            <div id="repositories" class="flex">
             </div>
         </div>
             <div id="perPageWrapper">
             </div>
             <div id="pagination"></div>
         </div>
-    </div>
-
-
     <script type="module" src="./js/index.js"></script>
-    <script src="./node_modules/axios/dist/axios.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input{
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+.gap-3 {
+    gap: 0.75rem;
+}
+
+/* UserName */
+.userNameInput {
+    border-bottom-width: 2px;
+}
+
+.submitBtn {
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#userNameWrapper {
+    border-bottom-width: 1px solid black;
+    margin-bottom: 5px;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+#content {
+    border: 2px solid black;
+    padding-top: 2rem;
+    padding-bottom: 2rem
+}
+
+/* Loader */
+.loader {
+    position: absolute;
+    border-radius: 0.5rem;
+    border-width: 4px;
+    background-color: #ffffff;
+    height: 250px;
+    width: 250px;
+}
+
+#contentLoader {
+    position: relative;
+    width: 100vw;
+    height: 70vh;
+}
+
+#repoLoader {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* About */
+#aboutWrapper {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    @media (min-width: 768px) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+#avatarWrapper {
+    width: 10rem;
+    height: 10rem;
+    @media (min-width: 1024px) {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    @media (min-width: 1280px) {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+#avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 9999px;
+    border-width: 4px;
+    @media (min-width: 1024px) {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    @media (min-width: 1280px) {
+        width: 13rem;
+        height: 13rem;
+    }
+}
+
+#about {
+    margin-bottom: 1.25rem;
+}
+
+#userInfo {
+    padding-left: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 50vw;
+
+    @media (min-width: 1024px) {
+        padding-left: 2.5rem;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+#userInfoName {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 900;
+
+    @media (min-width: 768px) {
+        margin-bottom: 0.75rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+
+    @media (min-width: 1024px) {
+        font-size: 3rem;
+        line-height: 1;
+    }
+}
+
+#location {
+    font-size: .75rem;
+    line-height: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+
+
+
+/* Repository */
+#repositories {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media (min-width: 768px) {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+.repo-wrapper {
+    overflow: hidden;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid black;
+    width: 40vw;
+}
+
+#repoLink{
+    text-decoration: none;
+}
+
+.repo-name {
+    margin-left: 0.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 900;
+    color: #0b439e;
+}
+
+.repo-description {
+    margin-left: 0.5rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.repo-language {
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    border-radius: 0.375rem;
+    color: #ffffff;
+    background-color: #1E40AF;
+}
+
+/* Pagination */
+.itemsPerPageInput {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    padding-left: 0.5rem;
+    border-width: 2px;
+    width: 80px;
+}
+
+.paginationBtn {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    cursor: pointer;
+}
+
+.disabledBtn {
+    cursor: default;
+    opacity: 0.4;
+}
+
+#goFirst {
+    border-left: 1px solid black;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+#currentPage {
+    cursor: default;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#goLast {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
