@@ -53,12 +53,9 @@ The following edge cases are handled.
 1. Clone the repository.
 ```bash
   git clone https://github.com/JollyBolt/fyle-assignment.git
-```
-2. Install dependencies with npm
-```bash
   cd fyle-assignment
 ```
-3. Run using live server.
+2. Run using live server.
 
 
     
