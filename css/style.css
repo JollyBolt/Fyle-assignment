@@ -18,7 +18,7 @@ body {
     display: none;
 }
 
-input{
+input {
     padding: 5px;
     font-size: 16px;
     border: none;
@@ -104,6 +104,7 @@ input:focus {
 #avatarWrapper {
     width: 10rem;
     height: 10rem;
+
     @media (min-width: 1024px) {
         width: 12rem;
         height: 12rem;
@@ -120,6 +121,7 @@ input:focus {
     height: 10rem;
     border-radius: 9999px;
     border-width: 4px;
+
     @media (min-width: 1024px) {
         width: 12rem;
         height: 12rem;
@@ -142,6 +144,10 @@ input:focus {
     font-size: 0.875rem;
     line-height: 1.25rem;
     width: 50vw;
+
+    @media (min-width: 768px) {
+        width: 100%;
+    }
 
     @media (min-width: 1024px) {
         padding-left: 2.5rem;
@@ -204,7 +210,7 @@ input:focus {
     width: 40vw;
 }
 
-#repoLink{
+#repoLink {
     text-decoration: none;
 }
 
