@@ -1,7 +1,9 @@
 This project is made for Fyle internship assignment.
+Assignemnt Recived on 17 Jan 2024.
+Assignment Completed on 19 Jan 2024
 
 ## Demo
-Check out the site [here](https://inotes-oyvc.onrender.com).
+Check out the site [here](https://ishan-fyle-assignment.netlify.app/).
 
 <p align="center">
 
