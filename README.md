@@ -1,5 +1,5 @@
-This project is made for Fyle internship assignment.
-Assignemnt Recived on 17 Jan 2024.
+This project is made for Fyle internship assignment.<br>
+Assignemnt Received on 17 Jan 2024.<br>
 Assignment Completed on 19 Jan 2024
 
 ## Demo
